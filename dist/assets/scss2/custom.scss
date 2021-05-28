@@ -1,0 +1,252 @@
+.Typist {
+  display: inline;
+}
+
+li.active > a {
+  color: #2f55d4 !important;
+}
+
+.pagination .active a {
+  color: #ffffff !important;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accordian-custom {
+  border: none;
+}
+
+#mt-1 {
+  margin-top: 5px !important;
+}
+
+#mb-1 {
+  margin-top: 5px !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.masonry-container {
+  width: 100%;
+  margin: auto;
+}
+.masonry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  margin: auto;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-grow: 1;
+}
+.tile {
+  img {
+    width: 100%;
+  }
+}
+
+.indicator-inactive,
+.indicator-active {
+  height: 6px !important;
+  width: 32px !important;
+  border-radius: 4px;
+  border: none;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.indicator-inactive {
+  background-color: #8492a6 !important;
+  opacity: 0.6;
+  width: 24px !important;
+}
+.indicator-active {
+  background-color: #01452C !important;
+  transform: rotate(0deg);
+}
+
+.custom-owl-dots {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.classForContainer {
+  position: fixed;
+  right: -100px;
+  bottom: 30px;
+  transition: right 0.5s;
+  cursor: pointer;
+  background-color: rgba(110, 211, 149, 0.2);
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px !important;
+
+  &:hover {
+    background-color: $primary !important;
+    svg {
+      stroke: $white !important;
+    }
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-left: 5px;
+    fill: none;
+    stroke: $primary
+  }
+}
+
+.classForTransition {
+  right: 30px;
+}
+//masonry
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  .card {
+    .faq {
+      > .active-link {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+.hover-border {
+  .nav-link {
+    &:focus,
+    &.active,
+    &:active {
+      outline: none !important;
+      border: transparent !important;
+    }
+    &:hover {
+      border-color: transparent !important;
+    }
+  }
+}
+
+.mdi-cog::before {
+  content: "\F493" !important;
+}
+.custom-dots {
+  .indicator-active {
+    background-color: #01452C !important;
+  }
+}
+.custom-dots {
+  .indicator-inactive {
+    background-color: #6486e4 !important;
+  }
+}
+.carousel-item_image{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 86.66%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 825ms ease-in-out;
+
+}
+.carousel-item_img{
+  width: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-item_body{
+  width: 100%;
+  display: flex;
+  margin: 0;
+  border: 0;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 598px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
+
+
+
+
+@media (min-width: 768px){
+  .carousel-item_image{
+    position: relative;
+    width: 600px;
+    height: 520px;
+    margin-left: 0;
+    margin-right: auto;
+    padding-bottom: 0;
+    
+  }
+  .carousel-item_body{
+    max-width: 598px;
+    margin: 0;
+    border: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding: 64px;
+  }
+
+
+  
+}
+
+@media (min-width: 1200px){
+  .carousel-item_body {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 992px){
+  .carousel-item_body {
+    height: 419px;
+    padding: 64px;
+  }
+}
+

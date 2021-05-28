@@ -1,0 +1,24 @@
+{
+  "name": "nsawo-tools",
+  "version": "1.0.0",
+  "description": "Libraries for https://nsawo.com",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garshom/nsawo-tools.git"
+  },
+  "keywords": [
+    "Nsawo",
+    "tools",
+    "assets"
+  ],
+  "author": "Garshom Charles K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garshom/nsawo-tools/issues"
+  },
+  "homepage": "https://github.com/garshom/nsawo-tools#readme"
+}
